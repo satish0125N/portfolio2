@@ -6,12 +6,9 @@
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	padding: 10px 0;
+
 	@include transition(300ms);
 
-	@media (min-width: $lg) {
-		padding: 15px 0;
-	}
 	&__burger-menu {
 		background-color: transparent;
 		border: none;
@@ -88,18 +85,14 @@
 		}
 	}
 	&.sticky {
+		@include transition(1000ms);
 		background: $primary;
-		padding: 5px 0;
+		.header__logo {
+			@include transition(1000ms);
+			max-width: 60px;
+		}
 	}
 
-	&__container {
-		@media (min-width: $xl) {
-			max-width: 1250px !important;
-		}
-		@media (min-width: $xxl) {
-			max-width: 1730px !important;
-		}
-	}
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -107,10 +100,17 @@
 	}
 	&__logo,
 	&__burger-menu {
-		max-height: 50px;
+		@include transition(1000ms);
+		max-width: 50px;
 		@media (min-width: $lg) {
-			max-height: 60px;
+			max-width: 90px;
 		}
+		@media (min-width: $xxl) {
+			max-width: 120px;
+		}
+	}
+	&__logo-link {
+		display: block;
 	}
 	&__burger-menu {
 		margin-top: 0px;
@@ -118,12 +118,14 @@
 		height: 30px;
 
 		@media (min-width: $xl) {
-			margin-top: 5px;
 			width: auto;
 		}
 	}
 	.nav-menu {
 		float: right;
+		a:first-of-type {
+			display: inline-block;
+		}
 	}
 }
 

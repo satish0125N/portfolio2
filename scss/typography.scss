@@ -4,11 +4,11 @@ b,
 }
 
 h1 {
-	color: $black;
+	color: $blue;
 	font-family: $Inter;
 	font-weight: $bold;
-	font-size: 4.8rem;
-	line-height: 5.5rem;
+	font-size: 3.8rem;
+	line-height: 4.5rem;
 	margin-bottom: 2rem;
 	letter-spacing: -0.03em;
 
@@ -34,11 +34,11 @@ h1 {
 }
 
 h2 {
-	color: $primary;
+	color: $blue;
 	font-family: $Inter;
 	font-weight: $bold;
-	font-size: 3.6rem;
-	line-height: 4.6rem;
+	font-size: 3rem;
+	line-height: 4rem;
 	letter-spacing: -0.02em;
 	margin-bottom: 1rem;
 
@@ -64,7 +64,7 @@ h2 {
 }
 
 h3 {
-	color: $primary;
+	color: $blue;
 	font-family: $Inter;
 	font-size: 3rem;
 	line-height: 4rem;
@@ -93,7 +93,7 @@ h3 {
 }
 
 h4 {
-	color: $primary;
+	color: $blue;
 	font-size: 2.8rem;
 	line-height: 3.8rem;
 	font-family: $Inter;
@@ -125,7 +125,7 @@ h4 {
 }
 
 h5 {
-	color: $black;
+	color: $blue;
 	font-size: 2.4rem;
 	line-height: 3rem;
 	font-family: $Inter;
@@ -144,7 +144,7 @@ h5 {
 }
 
 h6 {
-	color: $black;
+	color: $blue;
 	font-size: 2rem;
 	line-height: 2.5rem;
 	font-family: $Inter;
@@ -164,27 +164,15 @@ h6 {
 	}
 }
 
-.headline {
-	font-family: $Inter;
-	font-weight: $semi;
-	font-size: 2.8rem;
-	line-height: 4.2rem;
-	letter-spacing: -0.02em;
-
-	.dark-bg & {
-		color: $white;
-	}
-}
-
 p {
 	font-family: $Inter;
 	font-weight: $light;
 	font-size: 1.6rem;
-	color: $Mid;
+	color: $blue;
 	line-height: 2rem;
 	letter-spacing: 0.5px;
 	&.v2 {
-		color: $black;
+		color: $blue;
 	}
 }
 span.small {
@@ -194,7 +182,7 @@ span.small {
 	font-weight: 300;
 	line-height: normal;
 	letter-spacing: 0.25px;
-	color: $Mid;
+	color: $blue;
 }
 
 ul,
@@ -209,7 +197,7 @@ li {
 // 	position: relative;
 // 	font-family: $Inter;
 // 	font-weight: $light;
-// 	color: $primary;
+// 	color: $blue;
 // 	font-size: 1.4rem;
 // 	line-height: 2rem;
 // 	padding: 0 0 0 18px;
@@ -231,7 +219,7 @@ li {
 // 		position: absolute;
 // 		width: 8px;
 // 		height: 8px;
-// 		background: primary;
+// 		background: blu$blue;
 // 		top: 50%;
 // 		left: 0;
 // 		transform: translateY(-50%);

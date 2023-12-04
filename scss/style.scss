@@ -10,7 +10,6 @@
 		padding: 13rem 0 17rem;
 	}
 	@media (min-width: $xl) {
-		height: 100vh;
 		padding: 23rem 0 17rem;
 	}
 
@@ -28,15 +27,21 @@
 	}
 	&__icon {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: end;
+		@media (min-width: $md) {
+			flex-direction: column;
+		}
 		&-social {
 			width: 40px;
 			height: 40px;
 			border-radius: 50%;
 			background-color: $primary;
 			position: relative;
-			margin: 15px 0;
+			margin: 15px 5px;
+			@media (min-width: $md) {
+				margin: 15px 0;
+			}
 			@media (min-width: $lg) {
 				width: 45px;
 				height: 45px;
@@ -46,13 +51,17 @@
 				height: 60px;
 			}
 			&:first-child {
-				margin-top: 0;
+				@media (min-width: $md) {
+					margin-top: 0;
+				}
 			}
 			&:last-child {
-				margin-bottom: 0;
+				@media (min-width: $md) {
+					margin-bottom: 0;
+				}
 			}
 			&:hover {
-				background-color: $primary;
+				background-color: $blue;
 
 				@include transition(300ms);
 				i {
